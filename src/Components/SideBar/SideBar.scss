@@ -1,0 +1,54 @@
+@import "../../Styling/Mixins.scss";
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  position: fixed;
+  top: 40%;
+  z-index: 6;
+  left: 0;
+  margin-left: 0;
+  background-color: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 1px solid var(--light-color);
+  border-left: 0;
+
+  @include respond(phone) {
+    flex-direction: row;
+    top: auto;
+    bottom: 01rem;
+    height: fit-content;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    border: 1px solid var(--light-color);
+    border-left: 0;
+    border-top-left-radius: 5px;
+    border-right: 0;
+  }
+
+  > * {
+    color: var(--light-color);
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid var(--light-color);
+
+    &:nth-last-child(1) {
+      border-bottom: none;
+    }
+
+    > * {
+      font-size: 1.3rem;
+      transition: all 0.5s ease-in-out;
+
+      &:hover {
+        transform: scale(1.4);
+        color: var(--accent-color);
+      }
+    }
+  }
+}

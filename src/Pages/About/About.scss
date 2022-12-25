@@ -1,0 +1,100 @@
+@import "../../Styling/Mixins.scss";
+
+.about {
+  padding: 1rem 5rem;
+  display: flex;
+  flex-direction: column;
+
+  @include respond(tab-port) {
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+  }
+
+  &__intro {
+    display: grid;
+    grid-template-columns: 40% 50%;
+    grid-gap: 5%;
+
+    @include respond(tab-port) {
+      grid-template-columns: 100%;
+      padding: 1rem;
+    }
+
+    &_text {
+      a {
+        color: var(--accent-color);
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    &_img {
+      position: relative;
+      text-align: center;
+      width: 70%;
+      height: 90%;
+      margin: auto;
+      cursor: pointer;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 7px;
+        transition: all 0.5s ease;
+        filter: grayscale(100%);
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        border: 1px solid var(--accent-color);
+        top: 2rem;
+        right: 2rem;
+        z-index: -1;
+        transition: all 0.5s ease;
+        border-radius: 7px;
+        box-shadow: var(--box-shadow);
+      }
+
+      &:hover {
+        img {
+          // add blur effect to the image
+          // filter: blur(2px);
+          filter: grayscale(0%);
+        }
+
+        &::before {
+          top: -1rem;
+          right: 1rem;
+        }
+      }
+    }
+  }
+
+  &__tech {
+    display: flex;
+    margin: 1rem 0;
+
+    > * {
+      font-size: 2rem;
+      margin-right: 1rem;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover {
+        transform: scale(1.3);
+      }
+    }
+  }
+}

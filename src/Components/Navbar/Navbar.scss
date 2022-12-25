@@ -1,34 +1,106 @@
+@import "../../Styling/Mixins.scss";
+
 .nav {
   display: flex;
-  width: 100%;
-  padding: 0 1rem;
-  height: 4rem;
-  margin: 0;
-  background-color: var(--secondary-color);
-  box-shadow: var(--box-shadow);
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem 1rem;
+  overflow: hidden;
 
-  @media screen and (max-width: 768px) {
-    padding: 1rem;
+  &__toggler {
+    display: flex;
+    align-items: flex-end;
+    transition: all 0.5s ease-in-out;
+    &:hover {
+      margin-right: 1rem;
+    }
+
+    button {
+      font-family: var(--font-main);
+      font-size: 1.5rem;
+      color: var(--text-color);
+      margin-right: 0.3rem;
+      @include respond(phone) {
+        font-size: 1rem;
+      }
+    }
+    span {
+      width: 2.2rem;
+      background-color: var(--text-color);
+      height: 0.1rem;
+      margin-bottom: 0.2rem;
+      @include respond(phone) {
+        width: 1.7rem;
+      }
+    }
+  }
+  &__logo {
+    font-size: 3rem;
+    font-family: var(--font-main);
+    color: var(--text-color);
+    @include respond(phone) {
+      font-size: 1.5rem;
+    }
   }
 
   &__links {
     display: flex;
-    align-items: center;
+    //flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
-
-    &-link {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 7;
+    padding: 2rem;
+    background-color: var(--secondary-color);
+    right: 100%;
+    transition: all 0.6s ease-out;
+    &.show {
+      right: 0;
+    }
+    @include respond(phone) {
+      padding: 1rem;
+    }
+    &_link {
+      font-size: 6rem;
+      padding: 0;
       font-weight: bold;
-      text-decoration: none;
-      color: var(--accent-color);
-      font-size: 1.1rem;
-      letter-spacing: 1px;
-      transition: all 0.3s ease-in-out;
-      border: 1px solid transparent;
-      margin-right: 1rem;
+      font-family: var(--font-base);
+      transition: all 0.5s ease;
+      @include respond(desktop) {
+        font-size: 6.5rem;
+      }
+      @include respond(big-desktop) {
+        font-size: 15vh;
+      }
+
+      @include respond(phone) {
+        font-size: 3.5rem;
+      }
+      @include respond(sm-phone) {
+        font-size: 2.3rem;
+      }
+    }
+    &-close {
+      position: absolute;
       background: none;
+      top: 2rem;
+      right: 2rem;
+      font-size: 3rem;
+      font-weight: 700;
+      font-family: var(--font-main);
+      color: var(--text-color);
+      transition: all 0.8s ease-in-out;
       &:hover {
-        border-bottom: 1px solid var(--accent-color);
+        transform: rotate(180deg);
+      }
+    }
+    &-img {
+      width: 40%;
+      @include respond(tab-land) {
+        display: none;
       }
     }
   }

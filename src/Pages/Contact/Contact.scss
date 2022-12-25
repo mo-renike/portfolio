@@ -1,0 +1,45 @@
+@import "../../Styling/Mixins.scss";
+
+.contact {
+  text-align: center;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin: auto;
+  height: 100%;
+
+  @include respond(tab-port) {
+    padding: 1rem;
+    margin-top: 5rem;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-top: 0;
+    > * {
+      align-items: center;
+
+      margin-top: 2.2rem;
+    }
+    a {
+      font-size: 1.5rem;
+      align-items: center;
+      @include respond(phone) {
+        font-size: 1rem;
+      }
+    }
+    .zoom {
+      transition: all 0.7s ease;
+      &:hover {
+        transform: scale(1.4);
+        color: var(--accent-color);
+      }
+    }
+  }
+}

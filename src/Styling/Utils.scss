@@ -1,0 +1,77 @@
+//margin and padding
+
+$spaceamounts: (1, 2, 3, 4, 5);
+
+@each $space in $spaceamounts {
+  .m-#{$space} {
+    margin: #{$space}rem;
+  }
+
+  .mx-#{$space} {
+    margin: 0 #{$space}rem;
+  }
+
+  .my-#{$space} {
+    margin: #{$space}rem 0;
+  }
+  .mr-#{$space} {
+    margin-right: #{$space}rem;
+  }
+  .mt-#{$space} {
+    margin-top: #{$space}rem;
+  }
+  .ml-#{$space} {
+    margin-left: #{$space}rem;
+  }
+  .p-#{$space} {
+    padding: #{$space}rem;
+  }
+
+  .px-#{$space} {
+    padding: #{$space}rem 0;
+  }
+
+  .py-#{$space} {
+    padding: #{$space}rem 0;
+  }
+}
+
+.btn,
+.pry_btn {
+  border: 1px solid;
+  padding: 0.7rem 1rem;
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
+  margin-right: 0.7rem;
+}
+.pry_btn {
+  border-color: var(--accent-color);
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.hover-btm {
+  transition: all 0.7s ease;
+  width: fit-content;
+  &:after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 1.4px;
+    width: 0px;
+    background: transparent;
+    transition: all 0.7s ease;
+  }
+
+  &:hover:after {
+    width: 100%;
+    color: var(--text-color);
+    background: var(--accent-color);
+  }
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+// .scroll {
+//   overflow-y: auto;
+// }

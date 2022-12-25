@@ -1,0 +1,36 @@
+@import "../../Styling/Utils.scss";
+@import "../../Styling/Mixins.scss";
+
+.home {
+  width: 100vw;
+  height: 80vh;
+  overflow-y: hidden !important;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
+    @include respond(phone) {
+      width: 100%;
+    }
+    &_btns {
+      display: flex;
+      flex-direction: column;
+      transition: all 0.7s ease;
+      a {
+        padding: 0.2rem 0;
+        transition: all 0.7s ease;
+
+        &:hover {
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+}

@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import error from "./R.png";
-import "../../Pages/Repos/Repos.scss";
 import { Helmet } from "react-helmet-async";
 
 const NotFound = () => {
