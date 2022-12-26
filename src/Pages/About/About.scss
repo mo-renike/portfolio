@@ -1,9 +1,7 @@
 @import "../../Styling/Mixins.scss";
 
 .about {
-  padding: 1rem 5rem;
-  display: flex;
-  flex-direction: column;
+  padding: 1rem 5rem 3rem;
 
   @include respond(tab-port) {
     padding: 1rem;
@@ -13,12 +11,15 @@
 
   &__intro {
     display: grid;
-    grid-template-columns: 40% 50%;
-    grid-gap: 5%;
+    grid-template-columns: 40% 40%;
+
+    align-items: center;
+    justify-content: center;
 
     @include respond(tab-port) {
       grid-template-columns: 100%;
       padding: 1rem;
+      grid-gap: 5%;
     }
 
     &_text {

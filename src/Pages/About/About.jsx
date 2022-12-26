@@ -26,7 +26,7 @@ const About = () => {
                     <p>
                         I started learning how to code from scratch mid 2020 during the
                         lockdown. It has been an intresting and exciting journey, with a
-                        srpinkle of frustration here and there crying emoji
+                        srpinkle of frustration here and there 🥲
                     </p>
                     <p>
                         I'm an enthusiastic, innovative frontend Developer with proven

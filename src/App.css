@@ -24,11 +24,11 @@
 body {
   background-color: var(--primary-color);
   color: var(--text-color);
-  font-size: 15px;
   line-height: 1.5;
   font-family: var(--font-main);
   overflow-x: hidden;
   width: 100vw;
+  font-size: 16px;
   touch-action: pan-up;
 }
 
@@ -91,8 +91,9 @@ a {
   overflow: hidden;
   font-weight: 700;
   color: var(--text-color);
-  font-size: 12rem;
+  font-size: 16rem;
   pointer-events: none;
+  letter-spacing: 15px;
   opacity: 0.05;
   font-family: var(--font-base);
 }

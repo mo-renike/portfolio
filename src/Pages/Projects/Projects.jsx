@@ -13,8 +13,8 @@ const Projects = () => {
 
 
   return (
-    <div className="projects">
-      <Heading title={`03 - Projects `} />
+    <div className="projects"> <Heading title={`03 - Projects `} />
+
       <div className="projects__wrapper">
         <div className="projects__wrapper_display">
           <img src={project} alt="project" />
