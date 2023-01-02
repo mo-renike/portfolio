@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "./App.scss";
 import { Route, Routes } from "react-router-dom";
 import Navbar from "./Components/Navbar/Navbar";
 import NotFound from "./Components/NotFound/NotFound";
@@ -16,6 +16,16 @@ import grain2 from "../src/Assets/blob/lg-grain.png";
 import radial from "../src/Assets/blob/radial.png";
 
 const App = () => {
+  var cursor = document.querySelector(".cursor");
+  var cursor1 = document.querySelector(".cursor1");
+
+  document.addEventListener("mousemove", function (e) {
+    cursor.style.cssText =
+      "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+    cursor1.style.cssText =
+      "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+  });
+
   return (
     <HelmetProvider>
       <div className="App">
@@ -32,6 +42,8 @@ const App = () => {
           <Route path="/projects" element={<Projects />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <div className="cursor"></div>
+        <div className="cursor1"></div>
       </div>
     </HelmetProvider>
   );

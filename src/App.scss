@@ -29,7 +29,8 @@ body {
   overflow-x: hidden;
   width: 100vw;
   font-size: 16px;
-  touch-action: pan-up;
+  /* touch-action: pan-up; */
+  cursor: none;
 }
 
 .App {
@@ -117,4 +118,66 @@ a {
 
 ::placeholder {
   opacity: 0.5;
+}
+
+.cursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 120px;
+  height: 120px;
+  border: 2px solid var(--light-color);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: 0.2s;
+  z-index: 999;
+  animation: colors 5s infinite;
+
+  // $shapes: (
+  //   #005ffe: 650px,
+  //   #ffe5e3: 440px,
+  //   #ffcc57: 270px,
+  // );
+
+  // @each $color, $size in $shapes {
+  //   &.shape-#{index($shapes, ($color $size))} {
+  //     background: $color;
+  //     width: $size;
+  //     height: $size;
+  //     margin: (-$size/2) 0 0 (-$size/2);
+  //   }
+  // }
+}
+@keyframes colors {
+  0% {
+    border: 1px solid var(--accent-color);
+  }
+  50% {
+    border: 1px solid var(--light-color);
+  }
+  100% {
+    border: 1px solid var(--light-color);
+  }
+}
+.cursor1 {
+  width: 7px;
+  height: 7px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  border: 1px solid var(--light-color);
+  background-color: var(--light-color);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: 0.15s;
+}
+
+p:hover ~ .cursor {
+  transform: translate(-50%, -50%) scale(1.5);
+  width: 200px !important;
+  height: 200px !important;
+  background: red !important;
+  border: 3px solid red !important;
 }
