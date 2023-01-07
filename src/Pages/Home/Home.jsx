@@ -1,14 +1,14 @@
 import React from "react";
 import "./Home.scss";
-import { BsArrowRight, BsArrowDown } from "react-icons/bs";
+import { BsArrowRight } from "react-icons/bs";
 import { Heading } from "../../Components/Typography/Typography";
 
 const Home = () => {
-    const [show, setShow] = React.useState(false);
+    // const [show, setShow] = React.useState(false);
 
-    const takeAction = () => {
-        setShow(!show);
-    };
+    // const takeAction = () => {
+    //     setShow(!show);
+    // };
 
     return (
         <div className="home">
@@ -23,7 +23,10 @@ const Home = () => {
                     </p>
                 </div>{" "}
                 <br />
-                <button onClick={takeAction} className="pry_btn">
+                <a className="pry_btn" href="https://github.com/mo-renike">
+                    Go to my Github <BsArrowRight />
+                </a>
+                {/* <button onClick={takeAction} className="pry_btn">
                     Connect with Me <BsArrowDown />{" "}
                 </button>
                 {show && (
@@ -35,7 +38,7 @@ const Home = () => {
                             Go to my Github <BsArrowRight />
                         </a>
                     </div>
-                )}
+                )} */}
             </div>
             {/* eslint-disable-next-line jsx-a11y/no-distracting-elements */}
             <marquee scrollamount="10" className="marquee">

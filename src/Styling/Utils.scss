@@ -48,6 +48,11 @@ $spaceamounts: (1, 2, 3, 4, 5);
   border-color: var(--accent-color);
   font-size: 1rem;
   font-weight: bold;
+  transition: 0.4s ease;
+  &:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+  }
 }
 
 .hover-btm {

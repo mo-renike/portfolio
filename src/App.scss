@@ -40,6 +40,9 @@ body {
 p {
   font-size: 1rem;
   margin: 0.5rem 0;
+  @media only screen and (min-width: 1281px) {
+    font-size: 1vw;
+  }
 }
 img {
   width: 100%;
@@ -105,8 +108,8 @@ a {
   }
 }
 .cursor1 {
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   position: fixed;
   border: 1px solid var(--light-color);
   border-radius: 50%;
@@ -114,7 +117,7 @@ a {
   transform: translate(-50%, -50%);
   transition: 0.13s;
   z-index: 999;
-  animation: colors 5s infinite;
+  background-color: var(--light-color);
   &.hide {
     opacity: 0;
   }
@@ -122,17 +125,17 @@ a {
 
 .cursor {
   position: fixed;
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   border: 2px solid var(--light-color);
   border-radius: 50%;
   pointer-events: none;
   transform: translate(-50%, -50%);
-  transition: 0.24s;
+  transition: 0.1s;
   z-index: 999;
   &.link-grow {
-    width: 170px;
-    height: 170px;
+    width: 100px;
+    height: 100px;
     background-color: #46434c50;
     border: none;
   }

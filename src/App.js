@@ -28,40 +28,41 @@ const App = () => {
   const [cursor2X, setCursor2X] = useState();
   const [cursor2Y, setCursor2Y] = useState();
 
-  window.addEventListener("mousemove", (e) => {
-    setCursorX(e.clientX);
-    setCursorY(e.clientY);
-    setCursor2X(e.clientX);
-    setCursor2Y(e.clientY);
-  });
   // add a class tp the cursor when hover on the links
   useEffect(() => {
-    const cursor = document.querySelector(".cursor");
-    const cursor1 = document.querySelector(".cursor1");
-    const links = document.querySelectorAll("a");
-    const btns = document.querySelectorAll("button");
-    console.log(links);
-    links.forEach((link) => {
-      link.addEventListener("mouseover", () => {
-        cursor.classList.add("link-grow");
-        cursor1.classList.add("hide");
-      });
-      link.addEventListener("mouseleave", () => {
-        cursor.classList.remove("link-grow");
-        cursor1.classList.remove("hide");
-      });
-    });
-    btns.forEach((btn) => {
-      btn.addEventListener("mouseover", () => {
-        cursor.classList.add("link-grow");
-        cursor1.classList.add("hide");
-      });
-      btn.addEventListener("mouseleave", () => {
-        cursor.classList.remove("link-grow");
-        cursor1.classList.remove("hide");
-      });
+    window.addEventListener("mousemove", (e) => {
+      setCursorX(e.clientX);
+      setCursorY(e.clientY);
+      setCursor2X(e.clientX);
+      setCursor2Y(e.clientY);
     });
   }, []);
+
+  const cursor = document.querySelector(".cursor");
+  const cursor1 = document.querySelector(".cursor1");
+  const links = document.querySelectorAll("a");
+  const btns = document.querySelectorAll("button");
+
+  links.forEach((link) => {
+    link.addEventListener("mouseover", () => {
+      cursor.classList.add("link-grow");
+      cursor1.classList.add("hide");
+    });
+    link.addEventListener("mouseleave", () => {
+      cursor.classList.remove("link-grow");
+      cursor1.classList.remove("hide");
+    });
+  });
+  btns.forEach((btn) => {
+    btn.addEventListener("mouseover", () => {
+      cursor.classList.add("link-grow");
+      cursor1.classList.add("hide");
+    });
+    btn.addEventListener("mouseleave", () => {
+      cursor.classList.remove("link-grow");
+      cursor1.classList.remove("hide");
+    });
+  });
   return (
     <HelmetProvider>
       <div className="App">
