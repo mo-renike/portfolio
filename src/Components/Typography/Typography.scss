@@ -13,6 +13,9 @@
   @include respond(phone) {
     font-size: 2rem;
   }
+  @include respond(big-desktop) {
+    font-size: 5.5vw;
+  }
 }
 
 .heading2 {
