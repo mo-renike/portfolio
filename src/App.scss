@@ -31,6 +31,9 @@ body {
   font-size: 16px;
   /* touch-action: pan-up; */
   cursor: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .App {
