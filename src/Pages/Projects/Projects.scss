@@ -2,7 +2,7 @@
 @import "../../Styling/Mixins.scss";
 
 .projects {
-  padding: 1rem;
+  padding: 3rem;
   @include respond(tab-port) {
     padding: 1rem;
     margin-top: 5rem;

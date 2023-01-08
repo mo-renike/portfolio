@@ -3,7 +3,12 @@ import "./PreLoader.scss";
 
 const PreLoader = () => {
     return (
-        <div>PreLoader</div>
+        <div className='preloader'>
+            <div className="preloader__inner">
+                MORENIKE
+
+            </div>
+        </div>
     )
 }
 

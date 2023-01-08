@@ -9,6 +9,7 @@ import About from "./Pages/About/About";
 import Contact from "./Pages/Contact/Contact";
 import Projects from "./Pages/Projects/Projects";
 import SideBar from "./Components/SideBar/SideBar";
+import PreLoader from "./Components/PreLoader/PreLoader";
 
 const App = () => {
   // React.useEffect(() => {
@@ -36,6 +37,11 @@ const App = () => {
       setCursor2X(e.clientX);
       setCursor2Y(e.clientY);
     });
+    const preloader = document.querySelector(".preloader");
+    // hide the preloader after 2 seconds
+    setTimeout(() => {
+      preloader.classList.add("hide-preloader");
+    }, 2000);
   }, []);
 
   const cursor = document.querySelector(".cursor");
@@ -63,9 +69,11 @@ const App = () => {
       cursor1.classList.remove("hide");
     });
   });
+
   return (
     <HelmetProvider>
       <div className="App">
+        <PreLoader />
         <Navbar />
         <SideBar />
         <Routes>
