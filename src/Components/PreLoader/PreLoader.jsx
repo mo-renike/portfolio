@@ -5,8 +5,10 @@ const PreLoader = () => {
     return (
         <div className='preloader'>
             <div className="preloader__inner">
-                MORENIKE
-
+                <h2>  MORENIKE</h2>
+                <p>
+                    Frontend Developer, Musician, and Educator
+                </p>
             </div>
         </div>
     )
