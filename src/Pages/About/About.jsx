@@ -26,17 +26,22 @@ const About = () => {
                     <p>
                         I started learning how to code from scratch mid 2020 during the
                         lockdown. It has been an intresting and exciting journey, with a
-                        srpinkle of frustration here and there 🥲
+                        srpinkle of struggles here and there 🥲
+                    </p>{" "}
+                    <p>
+                        I am particularly passionate about building solutions that make
+                        lives easier and better using mordern technology and tools.
                     </p>
                     <p>
                         I'm an enthusiastic, innovative frontend Developer with proven
-                        experience focusing on building fast, scalable frontend
-                        applications using a mobile-first approach. </p>
-
-                    <p>I like to work closely with designers to take wireframes from
-                        conception to implementation I totally enjoy
-                        creating and optimizing interactive, user-friendly, and
-                        feature-rich websites/webapps from start to finish.
+                        experience focusing on building fast, scalable frontend applications
+                        using a mobile-first approach.{" "}
+                    </p>
+                    <p>
+                        I like to work closely with designers to take wireframes from
+                        conception to implementation I totally enjoy creating and optimizing
+                        interactive, user-friendly, and feature-rich websites/webapps from
+                        start to finish.
                     </p>
                     <br />
                     <h3>Here are some technologies I’ve been working with recently:</h3>
@@ -73,8 +78,8 @@ const About = () => {
                     </p>
                     <p>
                         {" "}
-                        I love listening to Rock, pop, neo-soul music and in my free time,
-                        I enjoy reading, watching movies, and playing my piano.
+                        I love listening to Rock, pop, neo-soul music and in my free time, I
+                        enjoy reading, watching movies, and playing my piano.
                     </p>{" "}
                     <br />{" "}
                     <Link className="btn" to="/contact">
@@ -92,7 +97,6 @@ const About = () => {
                         architecto reprehenderit, esse, ipsum expedita? Quam!
                     </p>
                 </div> */}
-
             </div>
         </div>
     );

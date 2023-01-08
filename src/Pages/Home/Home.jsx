@@ -2,6 +2,7 @@ import React from "react";
 import "./Home.scss";
 import { BsArrowRight } from "react-icons/bs";
 import { Heading } from "../../Components/Typography/Typography";
+import { Link } from "react-router-dom";
 
 const Home = () => {
     // const [show, setShow] = React.useState(false);
@@ -17,15 +18,15 @@ const Home = () => {
                     <p>{"Hi, my name is"}</p>
                     <Heading title="Morenike Oyewole" />
                     <p>
-                        I'm a Frontend developer. I love and enjoy
+                        I'm a Frontend developer with a passion for building solutions. I love and enjoy
                         coding beautiful, functional things for the web - with a focus on
                         reusability, scalability and User satisfaction{" "}
                     </p>
                 </div>{" "}
                 <br />
-                <a className="pry_btn" href="https://github.com/mo-renike">
-                    Go to my Github <BsArrowRight />
-                </a>
+                <Link style={{ display: "flex", alignItems: "center" }} className="pry_btn" to="/projects">
+                    View My  Projects <BsArrowRight style={{ marginLeft: "10px" }} />
+                </Link>
                 {/* <button onClick={takeAction} className="pry_btn">
                     Connect with Me <BsArrowDown />{" "}
                 </button>

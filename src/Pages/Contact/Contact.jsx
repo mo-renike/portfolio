@@ -31,7 +31,7 @@ const Contact = () => {
                         <FaWhatsapp /> Whatsapp Me
                     </a>
                 </div>
-                <a className="hover-btm mr-2" target="_blank" href="/Morenike_Resume.pdf"
+                <a className="hover-btm mr-2" target="_blank" href="https://docs.google.com/document/d/14Qoa16l3CZ_SdbFnNfOOAO1oBLrC8eSnNihLhrYkwdo/edit?usp=sharing" rel="noreferrer"
                 ><FaDownload /> View my resume</a>
                 <div className="d-f">
                     <a title="GitHub" className="mr-1 zoom" href="https://github.com/mo-renike">
