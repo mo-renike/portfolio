@@ -10,11 +10,13 @@ const Projects = () => {
   const handleHover = (e) => {
     setProject(e.target.getAttribute("data-image"));
   };
-
+  // create a carousel
 
   return (
-    <div className="projects"> <Heading title={`03 - Projects `} />
-
+    <div className="projects">
+      {" "}
+      <Heading title={`03 - Projects `} />
+      <p>Here are some cool projects I have built lately</p>
       <div className="projects__wrapper">
         <div className="projects__wrapper_display">
           <img src={project} alt="project" />
@@ -29,17 +31,26 @@ const Projects = () => {
                   rel="noreferrer"
                   onMouseOver={handleHover}
                   data-image={project.img}
+                  title={project.det}
                 >
-                  {project.name} {" "}
-                  <BsArrowRight className="ml-1" />
+                  {project.name} <BsArrowRight className="ml-1" />
                 </a>
               </li>
             ))}
             <li>
-              <a href="http://github.com/mo-renike" target="_blank" rel="noopener noreferrer">Others on  Github        <BsArrowRight className="ml-1" /></a>
+              <a
+                href="http://github.com/mo-renike"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Others on Github <BsArrowRight className="ml-1" />
+              </a>
             </li>
           </ul>
         </div>
+      </div>
+      <div className="projects__mobile">
+
       </div>
     </div>
   );
