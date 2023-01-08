@@ -14,7 +14,6 @@ const SideBar = () => {
             <a href="https://www.linkedin.com/in/morenike-oyewole/"
             ><FaLinkedin /></a>
             <a href="https://wa.link/tlqzgl"><FaWhatsapp /></a>
-            <span className="line"></span>
         </div>
     )
 }
