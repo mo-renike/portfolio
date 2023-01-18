@@ -3,6 +3,13 @@ import { ProjectsData } from "./ProjectsData";
 import "./Projects.scss";
 import { Heading } from "../../Components/Typography/Typography";
 import { BsArrowRight } from "react-icons/bs";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper";
+
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
 
 const Projects = () => {
   const [project, setProject] = useState(ProjectsData[0].img);
@@ -10,11 +17,9 @@ const Projects = () => {
   const handleHover = (e) => {
     setProject(e.target.getAttribute("data-image"));
   };
-  // create a carousel
 
   return (
     <div className="projects">
-      {" "}
       <Heading title={`03 - Projects `} />
       <p>Here are some cool projects I have built lately</p>
       <div className="projects__wrapper">
@@ -50,7 +55,26 @@ const Projects = () => {
         </div>
       </div>
       <div className="projects__mobile">
-
+        <br />
+        <br />
+        <div className="projects__mobile_wrapper">
+          <Swiper
+            spaceBetween={50}
+            slidesPerView={1}
+            loop={true}
+            navigation={true}
+            modules={[Navigation]}
+          >
+            {ProjectsData.map((project, index) => (
+              <SwiperSlide key={index}>
+                <img src={project.img} alt="project" />
+                <a href={project.live} target="_blank" rel="noreferrer">
+                  {project.name}
+                </a>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       </div>
     </div>
   );

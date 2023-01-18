@@ -16,6 +16,11 @@
     align-items: center;
     justify-content: center;
 
+    @include respond(tab-land) {
+      grid-template-columns: 55% 45%;
+      padding: 1rem;
+      grid-gap: 1%;
+    }
     @include respond(tab-port) {
       grid-template-columns: 100%;
       padding: 1rem;

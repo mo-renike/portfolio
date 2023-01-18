@@ -7,14 +7,6 @@ import cocktail from "../../Assets/img/cocktaily.png";
 
 export const ProjectsData = [
   {
-    id: 1,
-    name: "Everything Amala",
-    det: "Fetch all my github repos using the github API. Implement sort, error-boundary, nested routes, pagination and search functionality.",
-    code: "https://github.com/mo-renike/everything-amala",
-    live: "https://everything-amala.vercel.app/",
-    img: amala,
-  },
-  {
     id: 2,
     name: "Fitness App",
     det: "A React based app that displays gym execrises with corresponding gifs and a details page. React, SCSS, WebAPIs",
@@ -22,6 +14,15 @@ export const ProjectsData = [
     live: "https://fitnessexercises.netlify.app",
     img: fitness,
   },
+  {
+    id: 1,
+    name: "Everything Amala",
+    det: "Fetch all my github repos using the github API. Implement sort, error-boundary, nested routes, pagination and search functionality.",
+    code: "https://github.com/mo-renike/everything-amala",
+    live: "https://everything-amala.vercel.app/",
+    img: amala,
+  },
+
   {
     id: 3,
     name: "Edutech Website",

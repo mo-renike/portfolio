@@ -1,6 +1,7 @@
 @import url("https://fonts.cdnfonts.com/css/merchant");
 @import url("https://fonts.cdnfonts.com/css/nt-vanilla");
 @import url("https://fonts.cdnfonts.com/css/mioge");
+@import "../src/Styling/Mixins.scss";
 
 * {
   box-sizing: border-box;
@@ -34,6 +35,12 @@ body {
   &::-webkit-scrollbar {
     display: none;
   }
+  @include respond(phone) {
+    font-size: 14px;
+  }
+}
+li {
+  list-style: none;
 }
 
 .App {
@@ -59,12 +66,6 @@ a {
   border: none;
 }
 
-@media screen and (max-width: 768px) {
-  body {
-    font-size: 14px;
-  }
-}
-
 .marquee {
   position: absolute;
   bottom: -5rem;
@@ -77,14 +78,11 @@ a {
   letter-spacing: 15px;
   opacity: 0.05;
   font-family: var(--font-base);
-}
 
-@media screen and (max-width: 600px) {
-  .marquee {
-    font-size: 6rem;
+  @media screen and (max-width: 600px) {
+    display: none;
   }
 }
-
 .d-f {
   display: flex;
   align-items: center;
@@ -124,7 +122,8 @@ a {
   &.hide {
     opacity: 0;
   }
-  @include respond(tabport) {
+  // hide if device is touchscreen or mobile
+  @media (hover: none) and (pointer: coarse) {
     display: none;
   }
 }
@@ -145,21 +144,7 @@ a {
     background-color: #46434c50;
     border: none;
   }
-  @include respond(tabport) {
+  @media (hover: none) and (pointer: coarse) {
     display: none;
   }
-  // $shapes: (
-  //   #005ffe: 650px,
-  //   #ffe5e3: 440px,
-  //   #ffcc57: 270px,
-  // );
-
-  // @each $color, $size in $shapes {
-  //   &.shape-#{index($shapes, ($color $size))} {
-  //     background: $color;
-  //     width: $size;
-  //     height: $size;
-  //     margin: (-$size/2) 0 0 (-$size/2);
-  //   }
-  // }
 }

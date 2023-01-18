@@ -3,6 +3,7 @@
 
 .projects {
   padding: 3rem;
+
   @include respond(tab-port) {
     padding: 1rem;
     margin-top: 5rem;
@@ -13,7 +14,7 @@
     margin-top: 2rem;
     grid-template-columns: 60% 40%;
     @include respond(tab-land) {
-      grid-template-columns: 100%;
+      display: none;
     }
     &_display {
       display: flex;
@@ -23,6 +24,7 @@
 
       img {
         width: 70%;
+        box-shadow: var(--box-shadow);
         transition: all 0.7s ease;
         @include respond(tab-land) {
           width: 100%;
@@ -44,7 +46,7 @@
 
         li {
           a {
-            font-size: 2.8rem;
+            font-size: 2.3rem;
             @include respond(tab-land) {
               font-size: 2rem;
             }
@@ -63,4 +65,26 @@
       }
     }
   }
+
+  &__mobile {
+    display: none;
+    @include respond(tab-land) {
+      display: block;
+      margin-top: 2rem auto;
+    }
+    &_wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      position: relative;
+      a {
+        font-size: 2rem;
+        margin: 1rem auto;
+      }
+    }
+  }
+}
+.swiper-button-next:after,  .swiper-button-prev:after{
+  color: var(--accent-color);
 }
