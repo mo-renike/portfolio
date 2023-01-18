@@ -78,8 +78,8 @@ const About = () => {
                     </p>
                     <p>
                         {" "}
-                        I love listening to Rock, pop, neo-soul music and in my free time, I
-                        enjoy reading, watching movies, and playing my piano.
+                        I love listening to Rock, pop, EDM, neo-soul music and in my free time, I
+                        enjoy watching movies, and playing my piano.
                     </p>{" "}
                     <br />{" "}
                     <Link className="btn" to="/contact">
