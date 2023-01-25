@@ -122,9 +122,8 @@ a {
   &.hide {
     opacity: 0;
   }
-  // hide if device is touchscreen or mobile
   @media (hover: none) {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -145,6 +144,6 @@ a {
     border: none;
   }
   @media (hover: none) {
-    display: none;
+    display: none !important;
   }
 }
