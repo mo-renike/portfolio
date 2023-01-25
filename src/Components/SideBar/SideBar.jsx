@@ -1,7 +1,7 @@
 import React from 'react';
 import "./SideBar.scss";
 // import react-icons
-import { FaTwitter, FaLinkedin, FaEnvelope, FaWhatsapp } from "react-icons/fa";
+import { FaTwitter, FaLinkedin, FaEnvelope, FaWhatsapp, FaGithub } from "react-icons/fa";
 
 
 const SideBar = () => {
@@ -14,6 +14,9 @@ const SideBar = () => {
             <a href="https://www.linkedin.com/in/morenike-oyewole/"
             ><FaLinkedin /></a>
             <a href="https://wa.link/tlqzgl"><FaWhatsapp /></a>
+            <a href="https://github.com/mo-renike">
+                <FaGithub />
+            </a>
         </div>
     )
 }

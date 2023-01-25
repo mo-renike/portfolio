@@ -68,6 +68,7 @@
 
   &__mobile {
     display: none;
+    padding: 1.5rem;
     @include respond(tab-land) {
       display: block;
       margin-top: 2rem auto;
@@ -76,15 +77,17 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 1rem;
+
       position: relative;
       a {
         font-size: 1.6rem;
-        margin: 1rem auto;
+        margin: 2rem auto;
       }
     }
   }
 }
-.swiper-button-next:after,  .swiper-button-prev:after{
+.swiper-button-next:after,
+.swiper-button-prev:after {
   color: var(--accent-color);
+  font-size: 2rem !important;
 }

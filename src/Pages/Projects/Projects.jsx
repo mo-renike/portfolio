@@ -59,7 +59,7 @@ const Projects = () => {
         <br />
         <div className="projects__mobile_wrapper">
           <Swiper
-            spaceBetween={50}
+            spaceBetween={5}
             slidesPerView={1}
             loop={true}
             navigation={true}
@@ -68,6 +68,8 @@ const Projects = () => {
             {ProjectsData.map((project, index) => (
               <SwiperSlide key={index}>
                 <img src={project.img} alt="project" />
+                <br />
+                <br />
                 <a href={project.live} target="_blank" rel="noreferrer">
                   {project.name}
                 </a>
@@ -75,6 +77,9 @@ const Projects = () => {
             ))}
           </Swiper>
         </div>
+        <br />
+        <a href="http://github.com/mo-renike" target="_blank" rel="noopener noreferrer">Go to Github</a>
+
       </div>
     </div>
   );
