@@ -11,7 +11,7 @@
 }
 
 :root {
-  --secondary-color: #02000a;
+  --secondary-color: #01000a;
   --primary-color: #01000c;
   --text-color: #c8d1d0;
   --light-color: #46434c;
@@ -122,8 +122,9 @@ a {
   &.hide {
     opacity: 0;
   }
-  @media (hover: none) {
-    display: none !important;
+  // hide if device is touchscreen or mobile
+  @media (hover: none) and (pointer: coarse) {
+    display: none;
   }
 }
 
@@ -143,7 +144,7 @@ a {
     background-color: #46434c50;
     border: none;
   }
-  @media (hover: none) {
-    display: none !important;
+  @media (hover: none) and (pointer: coarse) {
+    display: none;
   }
 }

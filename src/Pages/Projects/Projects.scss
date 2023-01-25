@@ -68,10 +68,13 @@
 
   &__mobile {
     display: none;
-    padding: 1.5rem;
+    padding: 3.5rem;
     @include respond(tab-land) {
       display: block;
       margin-top: 2rem auto;
+    }
+    @include respond(phone) {
+      padding: 1.5rem;
     }
     &_wrapper {
       display: flex;

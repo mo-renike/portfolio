@@ -49,16 +49,10 @@ const App = () => {
   const links = document.querySelectorAll("a");
   const btns = document.querySelectorAll("button");
 
-  // hide cursor on mobile devices
-  if (window.innerWidth < 768) {
-    cursor.style.display = "none";
-    cursor1.style.display = "none";
-  }
-
   // hide cursor on touch devices
   window.addEventListener("touchstart", () => {
-    cursor.style.display = "none";
-    cursor1.style.display = "none";
+    cursor.classList.add("hide");
+    cursor1.classList.add("hide");
   });
 
   links.forEach((link) => {
