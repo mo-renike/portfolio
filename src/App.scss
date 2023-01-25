@@ -124,7 +124,7 @@ a {
   }
   // hide if device is touchscreen or mobile
   @media (hover: none) and (pointer: coarse) {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -145,6 +145,6 @@ a {
     border: none;
   }
   @media (hover: none) and (pointer: coarse) {
-    display: none;
+    display: none !important;
   }
 }
