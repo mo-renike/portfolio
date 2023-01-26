@@ -1,4 +1,4 @@
-@import url("https://fonts.cdnfonts.com/css/afta-sans");
+@import url("https://fonts.cdnfonts.com/css/poppins");
 @import url("https://fonts.cdnfonts.com/css/nt-vanilla");
 @import url("https://fonts.cdnfonts.com/css/mioge");
 @import "../src/Styling/Mixins.scss";
@@ -51,9 +51,9 @@ p {
   @media only screen and (min-width: 1281px) {
     font-size: 1vw;
   }
-  // @include respond(phone) {
-  //   font-family: "Afta sans", sans-serif;
-  // }
+  @include respond(phone) {
+    font-family: "poppins", sans-serif;
+  }
 }
 img {
   width: 100%;
