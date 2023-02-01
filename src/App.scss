@@ -53,6 +53,7 @@ p {
   }
   @include respond(phone) {
     font-family: "poppins", sans-serif;
+    font-size: 0.9rem;
   }
 }
 img {
@@ -123,6 +124,7 @@ a {
   &.hide {
     opacity: 0;
   }
+
   // hide if device is touchscreen or mobile
   @media (hover: none) and (pointer: coarse) {
     display: none !important;
@@ -139,6 +141,9 @@ a {
   transform: translate(-50%, -50%);
   transition: 0.1s;
   z-index: 999;
+  &.hide {
+    opacity: 0;
+  }
   &.link-grow {
     width: 100px;
     height: 100px;

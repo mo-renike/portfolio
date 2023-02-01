@@ -16,9 +16,8 @@ const Contact = () => {
     return (
         <div className="contact">
             <Heading title="04 - Contact Me" />
-            <p>
-                Do you have a question, an idea, or a project you need help with? <br />
-                Send me a message let's talk about it, Let's make something great!!
+            <p className="contact__heading">
+                With a focus on clean code and optimal performance, I strive to create dynamic websites that engage and delight users. Ready to take on new challenges and bring your vision to life, let's work together to create a beautiful and functional web presence.
             </p>
             <br />
             <div className="contact__links">

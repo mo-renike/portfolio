@@ -9,6 +9,7 @@ import { Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { Link } from "react-router-dom";
 
 
 const Projects = () => {
@@ -21,7 +22,7 @@ const Projects = () => {
   return (
     <div className="projects">
       <Heading title={`03 - Projects `} />
-      <p>Here are some cool projects I have built lately</p>
+      <p>Check out my latest projects and see how I bring ideas to life through stunning visuals and seamless user experiences</p>
       <div className="projects__wrapper">
         <div className="projects__wrapper_display">
           <img src={project} alt="project" />
@@ -78,8 +79,9 @@ const Projects = () => {
           </Swiper>
         </div>
         <br />
+        <Link to="/contact">Contact Me</Link>
+        <br />
         <a href="http://github.com/mo-renike" target="_blank" rel="noopener noreferrer">Go to Github</a>
-
       </div>
     </div>
   );

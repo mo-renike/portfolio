@@ -18,9 +18,7 @@ const Home = () => {
                     <p>{"Hi, my name is"}</p>
                     <Heading title="Morenike Oyewole" />
                     <p>
-                        I'm a Frontend developer with a passion for building solutions. I love and enjoy
-                        coding beautiful, functional things for the web - with a focus on
-                        reusability, scalability and User satisfaction{" "}
+                        I'm a Frontend developer with a passion for building solutions.  I am passionate about designing visually appealing interfaces and ensuring that the end-user experience is seamless.  With a strong eye for detail and a commitment to coding standards, I am confident in delivering high-quality projects that meet clients' needs.
                     </p>
                 </div>{" "}
                 <br />
