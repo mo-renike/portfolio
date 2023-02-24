@@ -22,7 +22,7 @@ const Projects = () => {
   return (
     <div className="projects">
       <Heading title={`03 - Projects `} />
-      <p>Check out my latest projects and see how I bring ideas to life through stunning visuals and seamless user experiences</p>
+      <p>Check out my latest projects and see how I bring ideas to life through stunning visuals and seamless user experiences using a problem-solving approach</p>
       <div className="projects__wrapper">
         <div className="projects__wrapper_display">
           <img src={project} alt="project" />

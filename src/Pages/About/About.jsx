@@ -25,21 +25,28 @@ const About = () => {
                 <div className="about__intro_text">
                     <p>
                         I started learning how to code from scratch mid 2020 during the
-                        lockdown. It has been an intresting and exciting journey, with a
-                        srpinkle of struggles here and there 🥲
-                    </p>{" "}
-                    <p>
-                        I am particularly passionate about building solutions that make
-                        lives easier and better using mordern technology and tools.
+                        lockdown after I'd just lost my job as a full time musician due to the lockdown.
+                        It has been an intresting and exciting journey, with it's own struggles 🥲 but as I began to dig deeper and hone my skills, I decided to transition fully into tech.
                     </p>
                     <p>
-                        I'm an enthusiastic, innovative frontend Developer with proven
+                        I am particularly passionate about building solutions that make
+                        lives easier and better using mordern technology and tools. <br />
+                        Before I got into tech, I had built <a href="http://homemusicschool.org">Home Music School</a> a platform that connects music teachers to parents that require their services  and also founded   <a
+                            href="http://instagram.com/bandittude"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                           Bandittude
+                        </a> an all-female platform that allows women in music find a place of expression and oppurtunities to learn, grow and be discovered.
+                    </p>
+                    <p>
+                        I'm an enthusiastic, innovative developer with proven
                         experience focusing on building fast, scalable frontend applications
                         using a mobile-first approach.{" "}
                     </p>
                     <p>
                         I like to work closely with designers to take wireframes from
-                        conception to implementation I totally enjoy creating and optimizing
+                        conception to implementation I absolutely enjoy creating and optimizing
                         interactive, user-friendly, and feature-rich websites/webapps from
                         start to finish.
                     </p>
@@ -55,31 +62,15 @@ const About = () => {
                         <FaGitAlt />
                         <FaVuejs />
                     </div>
-                    <br />
-                    <p>
+                    
+                    {/* <p>
                         On the side, I'm a musician exploring Music education and Music
-                        Performance. <br />I oversee a{" "}
-                        <a
-                            href="http://mo-renike.github.io/HOME"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Music Company
-                        </a>{" "}
-                        that parents a{" "}
-                        <a href="http://homemusicschool.org">Music School </a>and an{" "}
-                        <a
-                            href="http://instagram.com/bandittude"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            all female live band.
-                        </a>
-                    </p>
+                        Performance. <br />
+                    </p> */}
                     <p>
                         {" "}
                         I love listening to Rock, pop, EDM, neo-soul music and in my free time, I
-                        enjoy watching movies, and playing my piano.
+                        enjoy watching movies, playing my piano and staying at home.
                     </p>{" "}
                     <br />{" "}
                     <Link className="btn" to="/contact">
