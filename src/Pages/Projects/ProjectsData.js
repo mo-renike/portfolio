@@ -1,7 +1,7 @@
 import fitness from "../../Assets/img/fitness.png";
 import amala from "../../Assets/img/amala.png";
-import proj from "../../Assets/img/50projects.png";
-import edutech from "../../Assets/img/edutech.png";
+// import proj from "../../Assets/img/50projects.png";
+// import edutech from "../../Assets/img/edutech.png";
 import mov from "../../Assets/img/movieApp.png";
 import cocktail from "../../Assets/img/cocktaily.png";
 

@@ -17,7 +17,7 @@ const Contact = () => {
         <div className="contact">
             <Heading title="04 - Contact Me" />
             <p className="contact__heading">
-                With a focus on clean code and optimal performance, I strive to create dynamic websites that engage and delight users. Ready to take on new challenges and bring your vision to life, let's work together to create a beautiful and functional web presence.
+                Feel free to reach out if you're loking for a frontend developer, have questions or enquiries or you're simply looking to connect with me
             </p>
             <br />
             <div className="contact__links">

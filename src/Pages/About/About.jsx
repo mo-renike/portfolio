@@ -26,7 +26,7 @@ const About = () => {
                     <p>
                         I started learning how to code from scratch mid 2020 during the
                         lockdown after I'd just lost my job as a full time musician due to the lockdown.
-                        It has been an intresting and exciting journey, with it's own struggles 🥲 but as I began to dig deeper and hone my skills, I decided to transition fully into tech.
+                        It has been an intresting and exciting journey, with it's own struggles and challenges 🥲 but as I began to dig deeper and hone my skills, I decided to transition fully into tech.
                     </p>
                     <p>
                         I am particularly passionate about building solutions that make
@@ -73,8 +73,8 @@ const About = () => {
                         enjoy watching movies, playing my piano and staying at home.
                     </p>{" "}
                     <br />{" "}
-                    <Link className="btn" to="/contact">
-                        Contact Me
+                    <Link className="btn" to="/projects">
+                       Some of my projects
                     </Link>
                 </div>
                 {/* <div className="about__exp">

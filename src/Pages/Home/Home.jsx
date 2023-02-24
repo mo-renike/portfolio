@@ -18,12 +18,12 @@ const Home = () => {
                     <p>{"Hi, my name is"}</p>
                     <Heading title="Morenike Oyewole" />
                     <p>
-                        I'm a Frontend developer with a passion for building solutions.  I am passionate about designing visually appealing interfaces and ensuring that the end-user experience is seamless.  With a strong eye for detail and a commitment to coding standards, I am confident in delivering high-quality projects that meet clients' needs.
+                        I'm a Frontend developer with a passion for building solutions.  I love designing visually appealing interfaces and ensuring that the end-user experience is seamless.
                     </p>
                 </div>{" "}
                 <br />
-                <Link style={{ display: "flex", alignItems: "center" }} className="pry_btn" to="/projects">
-                    View My  Projects <BsArrowRight style={{ marginLeft: "10px" }} />
+                <Link style={{ display: "flex", alignItems: "center" }} className="pry_btn" to="/about">
+                    Learn More <BsArrowRight style={{ marginLeft: "10px" }} />
                 </Link>
                 {/* <button onClick={takeAction} className="pry_btn">
                     Connect with Me <BsArrowDown />{" "}

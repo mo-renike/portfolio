@@ -22,7 +22,7 @@ const Projects = () => {
   return (
     <div className="projects">
       <Heading title={`03 - Projects `} />
-      <p>Check out my latest projects and see how I bring ideas to life through stunning visuals and seamless user experiences using a problem-solving approach</p>
+      <p>I like to get my hands dirty and I'm almost always working on someting. <br /> Here are some of projects I have worked on recent times. </p>
       <div className="projects__wrapper">
         <div className="projects__wrapper_display">
           <img src={project} alt="project" />
@@ -49,8 +49,16 @@ const Projects = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Others on Github <BsArrowRight className="ml-1" />
+                More on Github <BsArrowRight className="ml-1" />
               </a>
+            </li>
+            <li>
+              
+              <Link
+                to="/contact"
+              >
+                Contact Me <BsArrowRight className="ml-1" />
+              </Link>
             </li>
           </ul>
         </div>
