@@ -2,63 +2,50 @@
 @import "../../Styling/Mixins.scss";
 
 .projects {
-  padding: 3rem;
+  padding: 1rem 4rem;
+  max-width: 1760px;
+  margin: 0 auto;
 
   @include respond(tab-port) {
     padding: 1rem;
-    margin-top: 5rem;
+    margin-top: 2rem;
   }
 
-  &__wrapper {
-    display: grid;
-    margin-top: 2rem;
-    grid-template-columns: 60% 40%;
-    @include respond(tab-land) {
-      display: none;
-    }
-    &_display {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 1rem;
-
-      img {
-        width: 70%;
-        box-shadow: var(--box-shadow);
-        transition: all 0.7s ease;
-        @include respond(tab-land) {
-          width: 100%;
+  &__container {
+    section {
+      border: 2px solid var(--secondary-color);
+      border-radius: 10px;
+      margin: 2.8rem 0;
+        padding: 0.5rem 3rem;
+      box-shadow: var(--box-shadow);
+      @include respond(phone) {
+        padding: 0.5rem;
+      }
+      &:nth-child(even) {
+        .singleProject {
+          flex-direction: row-reverse;
         }
       }
     }
-
-    &_links {
-      padding: 1rem;
-      @include respond(tab-land) {
-        margin-left: 3rem;
+    .singleProject {
+      display: grid;
+      grid-template-columns: 45% 45%;
+      grid-gap: 2rem;
+    
+      @include respond(tab-port) {
+        grid-template-columns: 100%;
       }
-      @include respond(phone) {
-        margin-left: 0;
+      .imageContainer {
+        display: flex;
+        flex-direction: column;
       }
-
-      ul {
-        list-style: none;
-
-        li {
-          a {
-            font-size: 2.3rem;
-            @include respond(tab-land) {
-              font-size: 2rem;
-            }
-            @include respond(phone) {
-              font-size: 1rem;
-            }
-            display: flex;
-            align-items: center;
-            transition: all 0.6s ease;
-            &:hover {
-              transform: translate(1rem);
-              color: var(--accent-color);
+      .textContainer {
+        .details {
+          .panel-content {
+            ul {
+              li {
+                list-style: circle;
+              }
             }
           }
         }
@@ -66,31 +53,57 @@
     }
   }
 
-  &__mobile {
-    display: none;
-    padding: 3.5rem;
-    @include respond(tab-land) {
-      display: block;
-      margin-top: 2rem auto;
-    }
-    @include respond(phone) {
-      padding: 1.5rem;
-    }
-    &_wrapper {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      position: relative;
-      a {
-        font-size: 1.6rem;
-        margin: 2rem auto;
-      }
-    }
-  }
 }
 .swiper-button-next:after,
 .swiper-button-prev:after {
   color: var(--accent-color);
   font-size: 2rem !important;
+}
+
+.react-tabs {
+  box-shadow: var(--box-shadow);
+  display: flex;
+  width: auto;
+  height: 100%;
+  border: 2px solid var(--secondary-color);
+  border-radius: 10px;
+}
+
+.react-tabs__tab-list {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin: 0;
+  padding: 0;
+}
+
+.react-tabs__tab {
+  padding: 12px 6px;
+  cursor: pointer;
+}
+
+.react-tabs__tab--selected {
+  background: var(--secondary-color);
+  border-color: var(--secondary-color);
+  border-left: 4px solid var(--accent-color);
+  color: var(--accent-color);
+}
+
+.react-tabs__tab-panel {
+  display: none;
+  width: 100%;
+  background-color: var(--primary-color);
+  padding: 10px 2rem;
+}
+
+.react-tabs__tab-panel--selected {
+  display: block;
+}
+
+.react-tabs__tab {
+  padding-left: 24px;
+}
+
+.panel-content {
+  text-align: left;
 }

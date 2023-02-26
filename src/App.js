@@ -78,9 +78,11 @@ const App = () => {
 
   return (
     <HelmetProvider>
+      {" "}
+      <Navbar />
       <div className="App">
         <PreLoader />
-        <Navbar />
+
         <SideBar />
         <Routes>
           <Route path="/" element={<Home />} />

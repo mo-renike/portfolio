@@ -9,6 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
   &__container {
     display: flex;
     align-items: flex-start;
@@ -16,6 +17,7 @@
     flex-direction: column;
     margin: auto;
     width: 50%;
+
     @include respond(phone) {
       width: 100%;
     }

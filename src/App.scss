@@ -11,12 +11,12 @@
 }
 
 :root {
-  --secondary-color: #01000a;
-  --primary-color: #01000c;
+  --secondary-color: #000503;
+  --primary-color: #000804;
   --text-color: #c8d1d0;
-  --light-color: #46434c;
+  --light-color: #575151;
   --accent-color: #00ff8c;
-  --box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.7);
+  --box-shadow: 0 1px 1px 1px #000a0639;
   --font-main: "NT Vanilla", sans-serif;
   --font-base: "Mioge", sans-serif;
   --transition: all 0.5s ease;
@@ -31,7 +31,7 @@ body {
   letter-spacing: 1.1px;
   width: 100vw;
   font-size: 16px;
-  /* touch-action: pan-up; */
+
   cursor: none;
   &::-webkit-scrollbar {
     display: none;
@@ -45,15 +45,15 @@ li {
   position: relative;
 }
 
-p {
+p, li {
   font-size: 1rem;
   margin: 0.5rem 0;
-  @media only screen and (min-width: 1281px) {
-    font-size: 1vw;
-  }
+  // @media only screen and (min-width: 1560px) {
+  //   font-size: 1vw;
+  // }
   @include respond(phone) {
     font-family: "poppins", sans-serif;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }
 img {
