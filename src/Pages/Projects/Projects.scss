@@ -16,30 +16,44 @@
       border: 2px solid var(--secondary-color);
       border-radius: 10px;
       margin: 2.8rem 0;
-        padding: 0.5rem 3rem;
+      padding: 0.5rem 3rem;
       box-shadow: var(--box-shadow);
+
       @include respond(phone) {
         padding: 0.5rem;
       }
+
       &:nth-child(even) {
         .singleProject {
           flex-direction: row-reverse;
+          @include respond(tab-port) {
+            flex-direction: column;
+          }
         }
       }
     }
+
     .singleProject {
-      display: grid;
-      grid-template-columns: 45% 45%;
-      grid-gap: 2rem;
-    
+      display: flex;
+      justify-content: space-between;
+      > * {
+        width: 45%;
+        @include respond(tab-port) {
+          width: 100%;
+        }
+      }
       @include respond(tab-port) {
-        grid-template-columns: 100%;
+        flex-direction: column;
       }
       .imageContainer {
         display: flex;
         flex-direction: column;
       }
+
       .textContainer {
+        @include respond(tab-port) {
+          margin-top: 1.6rem;
+        }
         .details {
           .panel-content {
             ul {
@@ -52,8 +66,8 @@
       }
     }
   }
-
 }
+
 .swiper-button-next:after,
 .swiper-button-prev:after {
   color: var(--accent-color);

@@ -18,6 +18,9 @@
     p {
       margin-top: 3rem;
       animation: slide-up 1s ease-in-out;
+      @include respond(big-desktop) {
+        margin-top: 4.7rem;
+      }
     }
   }
   &.hide-preloader {
@@ -40,7 +43,7 @@
 
 .content h2 {
   color: var(--text-color);
-  font-size: 5em;
+  font-size: 4.7rem;
   font-family: "Poppins", sans-serif;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -48,6 +51,9 @@
   left: 50%;
   @include respond(big-desktop) {
     font-size: 6vw;
+  }
+  @include respond(sm-phone) {
+    font-size: 3rem;
   }
 }
 

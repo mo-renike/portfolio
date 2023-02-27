@@ -1,4 +1,5 @@
 //margin and padding
+@import "./Mixins.scss";
 
 $spaceamounts: (1, 2, 3, 4, 5);
 
@@ -52,6 +53,9 @@ $spaceamounts: (1, 2, 3, 4, 5);
   &:hover {
     background-color: var(--accent-color);
     color: var(--primary-color);
+  }
+    @include respond(tab-port) {
+font-size: .8rem;
   }
 }
 

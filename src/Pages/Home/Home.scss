@@ -5,22 +5,20 @@
   width: 100vw;
   height: 80vh;
   overflow-y: hidden !important;
-  padding: 2rem;
+  padding: 6rem;
   display: flex;
   justify-content: center;
   align-items: center;
-
+  @include respond(phone) {
+    padding: 1.5rem;
+  }
   &__container {
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
     margin: auto;
-    width: 50%;
-
-    @include respond(phone) {
-      width: 100%;
-    }
+    max-width: 710px;
     &_btns {
       display: flex;
       flex-direction: column;
